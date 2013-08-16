@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>MD Ad</name>
+    <author>M. Hiddink</author>
+	<creationDate>27-05-2013</creationDate>
+	<authorEmail>support@mardinkwebdesign.com</authorEmail>
+	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
+    <version>1.1.1</version>
+    <license>GNU GPL v3 or later</license>
+	<description>MOD_MDADSENSE_DESCRIPTION</description>
+	
+    <files>
+        <filename module="mod_mdadsense">mod_mdadsense.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>languages</folder>
+    </files>
+ <languages folder="languages">
+<language tag="en-GB">en-GB/en-GB.mod_mdadsense.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_mdadsense.sys.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdadsense.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdadsensee.sys.ini</language>
+</languages>   
+<config>
+<fields name="params">
+	<fieldset name="basic">
+    	<field name="moduleclass_sfx" type="text" rows="15" default="" label="MOD_MDADSENSE_MCLASS_LABEL" description="MOD_MDADSENSE_MCLASS_DESCR" />
+    	<field name="adsense" type="textarea" default="" rows="10" filter="raw" label="MOD_MDADSENSE_ADSENSE_LABEL" description="MOD_MDADSENSE_ADSENSE_DESCR" />
+    	<field name="align" type="radio" class="btn-group" default="2" label="MOD_MDADSENSE_ALIGN_LABEL" description="MOD_MDADSENSE_ALIGN_DESCR">
+    		<option value="1">MOD_MDADSENSE_ALIGN_LEFT</option>
+			<option value="2">MOD_MDADSENSE_ALIGN_CENTER</option>
+			<option value="3">MOD_MDADSENSE_ALIGN_RIGHT</option>
+				</field>
+				<field type="spacer" name="myspacer" class="text" label="MOD_MDADSENSE_RESPONSIVE_LABEL" />
+		<field name="phone" type="radio" class="btn-group" default="1" label="MOD_MDADSENSE_PHONE_LABEL" description="MOD_MDADSENSE_PHONE_DESCR">
+    		<option value="1">MOD_MDADSENSE_SHOW</option>
+    		<option value="0">MOD_MDADSENSE_HIDE</option>
+			</field>
+		<field name="tablet" type="radio" class="btn-group" default="1" label="MOD_MDADSENSE_TABLET_LABEL" description="MOD_MDADSENSE_TABLET_DESCR">
+    		<option value="1">MOD_MDADSENSE_SHOW</option>
+    		<option value="0">MOD_MDADSENSE_HIDE</option>
+			</field>
+		<field name="desktop" type="radio" class="btn-group" default="1" label="MOD_MDADSENSE_DESKTOP_LABEL" description="MOD_MDADSENSE_DESKTOP_DESCR">
+    		<option value="1">MOD_MDADSENSE_SHOW</option>
+    		<option value="0">MOD_MDADSENSE_HIDE</option>
+			</field>			
+	</fieldset>
+</fields>
+</config>
+<updateservers>
+    <server type="extension" priority="1"
+        name="MDAdsense Update"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=5&dummy=extension.xml]]></server>
+</updateservers>
+</extension>
