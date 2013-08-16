@@ -1,21 +1,21 @@
 <?php
 /**
  * @package Joomla
- * @subpackage mdadsense
- * @copyright (C) 2012 Mardink Webdesign
+ * @subpackage md ad
+ * @copyright (C) 2013 Mardink Webdesign
  * @license GNU/GPL,
- * mdadsense is free software; you can redistribute it and/or
+ * MD Ad is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License 3
  * as published by the Free Software Foundation.
 
- * mdadsense is distributed in the hope that it will be useful,
+ * MD Ad is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
 	// no direct access
 	defined('_JEXEC') or die('Restricted access');
-	JFactory::getLanguage()->load('mod_mdadsense');
+	JFactory::getLanguage()->load('mod_mdad');
 	$langSite = substr($params->get('locale'), 0, 2);
 	if ($langSite != '') {
 		$langSite .= '/';
@@ -24,7 +24,7 @@
 	$moduleclass_sfx = $params->get('moduleclass_sfx');
 	
 	
-	// get google adsense conde
+	// get google adsense code
 	$adsense = $params->get('adsense');
 	
 // Define alignment
@@ -43,7 +43,7 @@
 		 	if ($desktop == "0") { $desktopstate = ' hidden-desktop';} else {
 		 		$desktopstate = '';	}
 ?>
-<div class="mdadsense<?php echo $moduleclass_sfx;?>">
+<div class="mdad<?php echo $moduleclass_sfx;?>">
 <div class="<?php echo $phonestate;?><?php echo $tabletstate;?><?php echo $desktopstate;?>">
 	<div class="<?php echo $alignpos;?>">
 		<?php echo $adsense;?>

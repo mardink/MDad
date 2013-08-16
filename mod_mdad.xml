@@ -2,24 +2,24 @@
 <extension type="module" version="2.5.0" client="site" method="upgrade">
     <name>MD Ad</name>
     <author>M. Hiddink</author>
-	<creationDate>27-05-2013</creationDate>
+	<creationDate>16-08-2013</creationDate>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
 	<authorUrl>http://www.mardinkwebdesign.com/</authorUrl>
-    <version>1.1.1</version>
+    <version>1.0.0</version>
     <license>GNU GPL v3 or later</license>
 	<description>MOD_MDADSENSE_DESCRIPTION</description>
 	
     <files>
-        <filename module="mod_mdadsense">mod_mdadsense.php</filename>
+        <filename module="mod_mdad">mod_mdad.php</filename>
         <filename>index.html</filename>
         <folder>tmpl</folder>
         <folder>languages</folder>
     </files>
  <languages folder="languages">
-<language tag="en-GB">en-GB/en-GB.mod_mdadsense.ini</language>
-<language tag="en-GB">en-GB/en-GB.mod_mdadsense.sys.ini</language>
-<language tag="nl-NL">nl-NL/nl-NL.mod_mdadsense.ini</language>
-<language tag="nl-NL">nl-NL/nl-NL.mod_mdadsensee.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_mdad.ini</language>
+<language tag="en-GB">en-GB/en-GB.mod_mdad.sys.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdad.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.mod_mdad.sys.ini</language>
 </languages>   
 <config>
 <fields name="params">
@@ -49,6 +49,6 @@
 </config>
 <updateservers>
     <server type="extension" priority="1"
-        name="MDAdsense Update"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=5&dummy=extension.xml]]></server>
+        name="MDAdsense Update"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=10&dummy=extension.xml]]></server>
 </updateservers>
 </extension>
